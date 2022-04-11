@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Shop App",
+    "slug": "TheShopApp",
+    "version": "1.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/squareicon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#033C67"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 1000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.halilseran.TheShopAppV4",
+      "buildNumber": "1.0.4",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.halilseran.TheShopAppV4",
+      "versionCode": 5,
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/shopIcon.png",
+        "backgroundColor": "#033C67"
+      },
+      "useNextNotificationsApi": true
+    },
+    "web":{
+    }
+  }
+}

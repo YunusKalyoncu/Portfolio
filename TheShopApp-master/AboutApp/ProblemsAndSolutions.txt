@@ -1,0 +1,64 @@
+stack navigation  'react-navigation-stack' e taşındı hatası 
+'react-navigation-stack' dan importladıkladıktan sonra 
+
+npm install react-navigation react-navigation-stack --save
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+app loading ve font ayarlayamama hatası için 
+
+import * as Font from 'expo-font';
+import AppLoading from 'expo-app-loading';
+//bu 2sini birlikte importlayıp terminale npm install --save expo-font yazıyoruz (fontun çalışması için)
+//sonra expo install expo-app-loading yazıyoruz (apploading çalışması için) 
+//son olarak npm install yazıyoruz (son hatayı düzeltiyoruz, eksik birkaç dosyayı yüklüyor)
+onError={(err) => console.log(err)}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TypeError: (0, _native.useTheme) is not a function. (In '(0, _native.useTheme)()', '(0, _native.useTheme)' is undefined)
+
+Try to add npm i --save @react-navigation/native
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+bir file i yada function componenti yada componentı importlarken curly bracketsa almadan importla
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+And also for DrawerNavigator problem
+npm install --save react-navigation-drawer
+import { createDrawerNavigator } from 'react-navigation-drawer';
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+interpolate is not a function. (In 'interpolate(this.progress, {
+              inputRange: [PROGRESS_EPSILON, 1],
+              outputRange: [0, 1]
+            })', 'interpolate' is undefined)
+
+npm uninstall react-native-reanimated
+npm install --save react-native-reanimated@1.13.1
+expo start --clear
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TypeError: TypeError: moment is not a function. (In 'moment(this.date)', 'moment' is an instance of Object)
+
+import * as moment from 'moment' yerine import moment from 'moment' 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Setting a timer for a long period of time, i.e. multiple minutes, is a performance and correctness issue on Android
+android de auto logout yaparken süre hesaplamada android hata veriyor 
+çözüm Go to node_modules/react-native/Libraries/Core/Timer/JSTimers.js
+
+Look for the variable MAX_TIMER_DURATION_MS
+
+Change 60 * 1000 to 10000 * 1000 , needed for firebase
+
+bu şekilde çözülüyor ama hala optimum bir çözümü yok
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
