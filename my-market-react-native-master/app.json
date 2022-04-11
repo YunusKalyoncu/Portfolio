@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Mo supermkt",
+    "slug": "mosupermkt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo1.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.mosupermkt.mosupermkt"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.mosupermkt.mosupermkt",
+      "versionCode": 1
+    },
+    "description": ""
+  }
+}
